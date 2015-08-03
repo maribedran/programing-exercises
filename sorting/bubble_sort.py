@@ -16,6 +16,9 @@ def sort_two_by_two(ul):
 def bubble(ul):
 
     sorted_list = ul
-    for _ in range(len(sorted_list) - 1):
-        sorted_list = sort_two_by_two(sorted_list)
+    copyed_list = []
+    while copyed_list != sorted_list:
+        copyed_list = sorted_list[:]
+        for _ in range(len(sorted_list) - 1):
+            sorted_list = sort_two_by_two(sorted_list)
     return sorted_list
