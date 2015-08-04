@@ -11,8 +11,9 @@ def is_smallest(li, l):
 def selct(ul):
 
     ordered_list = []
-    for i in range(len(ul)):
-        if is_smallest(ul[i], ul):
-            ordered_list.append(ul[i])
-            ul.pop(i)
+    while len(ul) > 0:
+        for i in ul:
+            if is_smallest(i, ul):
+                ordered_list.append(i)
+                ul.remove(i)
     return ordered_list
