@@ -1,3 +1,5 @@
+# Verifies if item is the smallest of the list and appends it to the sorted list
+
 def is_smallest(li, l):
 
     smallest = l[0]
